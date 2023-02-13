@@ -28,7 +28,7 @@ def go(args):
     df = pd.read_csv(artifact_path)
 
     logger.info("INFO: DROPPING OUTLIERS")
-    mask = (df["price"]>=args.min_price) & (df["price"]<=args.max_price) 
+    mask = ((df["price"]>=args.min_price) & (df["price"]<=args.max_price)) & ((df["latitude"]>=40.5) & df["latitude"]<=41.2)
     df = df[mask]
 
     logger.info("INFO: APPLYING DATE FORMAT TO LAST_REVIEW TABLE")
