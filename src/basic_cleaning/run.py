@@ -28,8 +28,11 @@ def go(args):
     df = pd.read_csv(artifact_path)
 
     logger.info("INFO: DROPPING OUTLIERS")
-    mask = ((df["price"]>=args.min_price) & (df["price"]<=args.max_price)) & ((df["latitude"]>=40.5) & df["latitude"]<=41.2)
+    mask = (df["price"]>=args.min_price) & (df["price"]<=args.max_price)
     df = df[mask]
+
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
 
     logger.info("INFO: APPLYING DATE FORMAT TO LAST_REVIEW TABLE")
     df["last_review"] = pd.to_datetime(df["last_review"])
