@@ -11,7 +11,7 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 <br />
 
 
-### [Link](https://github.com/samuelcastann/build-ml-pipeline-for-short-term-rental-prices/tree/1.0.3) for the GitHub repo
+### [Link](https://github.com/samuelcastann/build-ml-pipeline-for-short-term-rental-prices/tree/1.0.4) for the GitHub repo
 
 <br />
 
