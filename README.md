@@ -11,12 +11,12 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 <br />
 
 
-### [Link](https://github.com/samuelcastann/build-ml-pipeline-for-short-term-rental-prices/tree/1.0.4) for the GitHub repo
+### [Link](https://github.com/samuelcastann/build-ml-pipeline-for-short-term-rental-prices/tree/1.0.5) for the GitHub repo
 
 <br />
 
-### To run the latest version (1.0.3) please use the following command on your terminal <br />
+### To run the latest version (1.0.5) please use the following command on your terminal <br />
 
 ```
-mlflow run https://github.com/samuelcastann/build-ml-pipeline-for-short-term-rental-prices.git -v 1.0.4 -P hydra_options="etl.sample='sample2.csv'"
+mlflow run https://github.com/samuelcastann/build-ml-pipeline-for-short-term-rental-prices.git -v 1.0.5 -P hydra_options="etl.sample='sample2.csv'"
 ```
